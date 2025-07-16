@@ -1,14 +1,14 @@
 const convertToCelsius = function(temp) {
-  let converted = (temp - 32) * 5/9;
-  let result = Math.round(converted * 10) / 10;
-  return result;
+  let celsiusUnrounded  = (temp - 32) * 5/9;
+  let celsiusRounded = Math.round(celsiusUnrounded * 10) / 10;
+  return celsiusRounded;
 };
 
 const convertToFahrenheit = function(temp) {
-  let converted = (temp * 9/5) + 32;
-  let result = Math.round(converted * 10) / 10;
+  let fahrenheightUnrounded = (temp * 9/5) + 32;
+  let fahrenheightRounded = Math.round(fahrenheightUnrounded * 10) / 10;
 
-  return result;
+  return fahrenheightRounded;
 };
 
 // Do not edit below this line
